@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frutería Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Bienvenido a la Frutería Shary 🍎🍌🍊</h1>
+
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Precio </th>
+            <th>Disponibilidad</th>
+        </tr>
+        <tr>
+            <td>Manzana</td>
+            <td>3.000</td>
+            <td>Disponible</td>
+        </tr>
+        <tr>
+            <td>Banana</td>
+            <td>2.500</td>
+            <td>Disponible</td>
+        </tr>
+        <tr>
+            <td>Uvas</td>
+            <td>4.500</td>
+            <td>Agotado</td>
+        </tr>
+        <tr>
+            <td>Naranja</td>
+            <td>3.200</td>
+            <td>Disponible</td>
+        </tr>
+    </table>
+
+    <h2>Realiza tu pedido aquí:</h2>
+    <form id="pedido-form">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="fruta">Selecciona una fruta:</label>
+        <select id="fruta" name="fruta">
+            <option value="manzana">Manzana</option>
+            <option value="banana">Banana</option>
+            <option value="uvas">Uvas</option>
+            <option value="naranja">Naranja</option>
+        </select>
+
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" name="cantidad" min="1" required>
+
+        <button type="submit">Enviar Pedido</button>
+    </form>
+
+    <p id="mensaje"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
